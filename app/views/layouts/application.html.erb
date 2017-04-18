@@ -41,15 +41,17 @@
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span class="icon-bar"><%= link_to "Whatshappening", root_url  %></span>
+          <span class="icon-bar"><%= link_to "Events", events_path  %></span>
+
         </button>
-        <a class="navbar-brand" href="<% link_to 'Whatshapening', root_url  %>">Whatshapening</a>
+        <ul class="nav navbar-nav">
+        <li><%= link_to "Whatshappening", root_url  %></li>
+      </ul>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Events", events_path  %></li>
-
+            <li><%= link_to "Contact Us", "#"  %></li>
           </ul>
           <ul class="nav nvbar pull-right col-md-4">
             <% if current_user %>
