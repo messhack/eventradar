@@ -14,6 +14,12 @@ gem 'sqlite3'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'fog'
+gem 'bootstrap-sass', '~> 3.3.5'
 
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
